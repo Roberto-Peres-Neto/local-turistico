@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #a7a6a6;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #E1624F;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+.main-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  transition: opacity 0.3s ease;
+  opacity: ;
+  z-index: 0;
+}
+
+.main-image-wrapper:hover::before {
+  opacity: 1;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.highlights {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.highlights h2 {
+  color: #000000;
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+
+.highlights article {
+  margin-top: 30px;
+  position: relative;
+}
+
+.highlights img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.highlights img:hover {
+  transform: scale(1.05);
+}
+
+.highlights article::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(100px);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.highlights article:hover::before {
+  opacity: 5;
+}
+
+.highlights h4 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
